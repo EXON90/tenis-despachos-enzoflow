@@ -1,4 +1,4 @@
-# 👟 Sistema de Despachos de Tenis
+# 👟 Sistema de Despachos de Tenis Enzoflow
 
 Aplicación web para cargar, visualizar y hacer seguimiento a los despachos de tenis por cliente.
 
@@ -39,7 +39,7 @@ Un archivo de ejemplo está disponible en `database/ejemplo_despachos.csv`.
 
 ## Stack
 
-- **Frontend:** React 18 + Vite + Tailwind CSS + lucide-react
+- **Frontend:** React 18 + Vite + Tailwind CSS + lucide-react + Recharts (librería de graficas 3.8.1)
 - **Runtime frontend:** Node 24 + pnpm
 - **Backend:** FastAPI + SQLAlchemy (Python 3.12.9)
 - **Base de datos:** PostgreSQL 16
