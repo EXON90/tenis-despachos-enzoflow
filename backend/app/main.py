@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routers import csv_upload, clientes
 
 app = FastAPI(
-    title="API — Sistema de Despachos de Tenis",
+    title="API — Sistema de Despachos de Tenis Enzoflow",
     version="1.0.0"
 )
 
@@ -19,4 +19,4 @@ app.include_router(clientes.router,   prefix="/clientes", tags=["Clientes"])
 
 @app.get("/", tags=["Health"])
 def health():
-    return {"status": "ok", "app": "Despachos de Tenis"}
+    return {"status": "ok", "app": "Despachos de Tenis Enzoflow"}
