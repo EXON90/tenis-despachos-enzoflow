@@ -61,9 +61,9 @@
 
 ## Pendientes menores antes de entrega final
 
-- [ ] Reemplazar la URL placeholder `https://github.com/usuario/tenis-despachos.git` con la URL real del repositorio en la seccion 4.5 del documento Word.
-- [ ] Agregar version `3.8.1` de Recharts en la tabla de stack del documento Word (seccion 4.2).
-- [ ] Unificar formato de fecha a `D/MM/YYYY` (barras) en Tabla 1, Tabla 10 y RN-05 del documento Word — actualmente algunos muestran guiones.
+- [ ] Corregir en la seccion 4.5 del Word el comando `cd tenis-despachos` por `cd tenis-despachos-enzoflow`.
+- [ ] Corregir RN-05 en el Word: aparece `DD/MM /YYYY`; debe quedar `DD/MM/YYYY`.
+- [ ] Aclarar en el Word que la tabla del archivo CSV de ejemplo muestra una muestra parcial o incluir las 7 filas reales del archivo `database/ejemplo_despachos.csv`.
 - [ ] Insertar screenshots reales en Anexos F y G del documento Word (evidencias de Docker y del sistema funcionando).
 
 ---

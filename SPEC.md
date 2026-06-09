@@ -11,7 +11,7 @@ Sin autenticación. Despliegue 100% con Docker Compose.
 
 | Capa | Tecnología | Versión |
 |---|---|---|
-| Frontend | React + Vite + Tailwind CSS | Node 24 |
+| Frontend | React + Vite + Tailwind CSS + Recharts + lucide-react | Node 24 |
 | Backend | FastAPI + SQLAlchemy | Python 3.12.9 |
 | Base de datos | PostgreSQL | 16 |
 | Contenedores | Docker + Docker Compose | 3.9 |
@@ -258,7 +258,7 @@ tenis-despachos/
 
 | ID | Caso de uso | Descripción |
 |---|---|---|
-| CU-01 | Ver dashboard inicial | El administrador entra al sistema y visualiza el resumen principal: total de clientes, despachos, pares, valor total y top 5 clientes. |
+| CU-01 | Ver dashboard inicial | El administrador entra al sistema y visualiza el resumen principal: total de clientes, despachos, pares, valor total, top 5 clientes y gráficas de evolución. |
 | CU-02 | Cargar CSV | El administrador sube un archivo CSV UTF-8 separado por punto y coma (`;`) para registrar despachos. |
 | CU-03 | Consultar clientes | El administrador revisa el listado de clientes y puede buscar por nombre o NIT. |
 | CU-04 | Ver detalle de cliente | El administrador consulta el historial de despachos de un cliente específico. |
@@ -271,7 +271,7 @@ tenis-despachos/
 - **Enfoque:** Mobile First
 - **Framework CSS:** Tailwind CSS
 - **Iconos:** lucide-react, estilo lineal y minimalista
-- **Gráficas:** Recharts (PieChart con Customized para label central, BarChart con dos ejes Y)
+- **Gráficas:** Recharts (PieChart con `Customized` para label central, BarChart separado para pares por mes y valor por mes)
 - **Breakpoints:** base(móvil) → sm(640px) → md(768px) → lg(1024px)
 - **Paleta:**
   - Primario ENZOTEC: `#f20505`
@@ -304,7 +304,7 @@ VITE_API_URL=http://localhost:8000
 ## Instrucciones de despliegue
 
 ```bash
-git clone https://github.com/usuario/tenis-despachos-enzoflow.git
+git clone https://github.com/EXON90/tenis-despachos-enzoflow.git
 cd tenis-despachos-enzoflow
 docker compose up --build
 # App: http://localhost:5173
